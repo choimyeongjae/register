@@ -4,7 +4,7 @@ Vanilla JS + Node.js/Express + Supabase(Postgres)로 구현한 회원가입 프�
 
 ## 배포 URL
 
-> (배포 후 Render URL 입력)
+https://register-form-ib11.onrender.com
 
 ## 로컬 실행
 
