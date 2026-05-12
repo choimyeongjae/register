@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section id="register-section">
+      <h1>회원가입</h1>
+      <form id="register-form" novalidate>
+        <div class="field">
+          <label for="username">아이디</label>
+          <input type="text" id="username" name="username" autocomplete="username" />
+          <span class="error-msg" data-for="username"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+          <span class="error-msg" data-for="email"></span>
+        </div>
+
+        <div class="field">
+          <label for="password">비밀번호</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" />
+          <span class="error-msg" data-for="password"></span>
+        </div>
+
+        <div class="field">
+          <label for="password-confirm">비밀번호 확인</label>
+          <input type="password" id="password-confirm" name="password-confirm" autocomplete="new-password" />
+          <span class="error-msg" data-for="password-confirm"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">가입하기</button>
+      </form>
+    </section>
+
+    <section id="success-section" class="hidden">
+      <h1>가입이 완료되었습니다 🎉</h1>
+      <p>가입한 아이디: <strong id="registered-username"></strong></p>
+      <p>가입한 이메일: <strong id="registered-email"></strong></p>
+      <button type="button" id="back-btn" class="submit-btn">처음으로</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
