@@ -25,10 +25,10 @@ npm start
 
 - **프론트**: Vanilla JS, HTML/CSS
 - **백엔드**: Node.js, Express
-- **DB**: Supabase (Postgres)
-- **보안**: bcrypt 비밀번호 해싱
+- **DB**: Supabase (PostgresSQL)
+- **보안**: bcrypt 
 
-## 알려진 한계
+## 주의할 점
 
-- **Render 콜드 스타트**: 15분 이상 요청이 없으면 서버가 슬립 상태로 진입합니다. 첫 접속 시 약 30초 대기가 발생할 수 있습니다.
-- **Supabase 슬립**: 7일 이상 활동이 없으면 DB 프로젝트가 일시정지됩니다. Supabase 대시보드에서 1클릭으로 재활성화할 수 있습니다.
+- **Render 콜드 스타트**: 15분 이상 요청이 없으면 서버가 슬립 상태로 진입함. 첫 접속 시 약 30초 대기가 발생.
+- **Supabase 슬립**: 7일 이상 활동이 없으면 DB 프로젝트 일시정지. Supabase 대시보드에서 재활성화 가능!
