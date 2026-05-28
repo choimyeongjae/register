@@ -1,16 +1,12 @@
 import express from 'express';
 import cors from 'cors';
 import bcrypt from 'bcrypt';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
 import { pool } from './db.js';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(join(__dirname, '..')));
+app.use(express.static('.'));
 
 // 검증 정규식 (프론트와 동일)
 const USERNAME_REGEX = /^[a-zA-Z0-9_]{4,20}$/;

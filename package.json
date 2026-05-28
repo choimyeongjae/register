@@ -2,13 +2,13 @@
   "name": "register-form-backend",
   "version": "1.0.0",
   "type": "module",
-  "main": "server/index.js",
+  "main": "server.js",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "node --env-file=.env server/index.js",
-    "start:prod": "node server/index.js"
+    "start": "node --env-file=.env server.js",
+    "start:prod": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
